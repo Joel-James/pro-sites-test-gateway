@@ -19,8 +19,8 @@ class Pro_Sites_Test_Gateway {
 		add_action( 'delete_blog', array( 'Pro_Sites_Test_Gateway', 'cancel_subscription' ) );
 
 		// Handle renewal notifications from your gateway webhook.
-		add_action( 'wp_ajax_nopriv_psts_stripe_webhook', array( 'Pro_Sites_Test_Gateway', 'webhook_handler' ) );
-		add_action( 'wp_ajax_psts_stripe_webhook', array( 'Pro_Sites_Test_Gateway', 'webhook_handler' ) );
+		add_action( 'wp_ajax_nopriv_psts_test_webhook', array( 'Pro_Sites_Test_Gateway', 'webhook_handler' ) );
+		add_action( 'wp_ajax_psts_test_webhook', array( 'Pro_Sites_Test_Gateway', 'webhook_handler' ) );
 	}
 
 	/**
